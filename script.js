@@ -1,4 +1,6 @@
 
+  console.log('teste')
+  
   const cookieImg = document.querySelector(".cookie");
   const cardDiv = document.querySelector(".card");
   const luckCardDiv = document.querySelector(".luck-card");

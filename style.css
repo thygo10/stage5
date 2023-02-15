@@ -12,6 +12,9 @@ body {
   font-size: 1.6rem;
   height: 100vh;
   width: 100vw;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+		animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
 }
 
 .container {
@@ -66,7 +69,9 @@ height: 564px;
 }
 
 .luck-card.hide {
-  display: hidden;
+  display:block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .luck-message{
@@ -104,5 +109,18 @@ margin-right: auto;
 
 .hide{
   opacity: 0;
-  display: none;
+  display: hidden;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
