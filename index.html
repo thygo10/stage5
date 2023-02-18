@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer ></script>
+  <script src="script.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
     rel="stylesheet">
@@ -16,26 +16,26 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="luck-card">
-      <h1>
-        Aqui está a sua sorte de hoje:
-      </h1>
-      <div class="luck-message ">
-        <h5>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</h5>
-      </div>
-      <img src="./assets/luck.svg" alt="">
-      <button id="newLuck">
-        Abrir outro biscoito
-      </button>
-    </div>
-    <div class="card ">
+
+  <main>
+
+    <div class="screen1">
+
       <h1>Qual é a sua sorte de hoje?</h1>
-      <h3>Abra o biscoito e descubra!</h3>
-      <img class="cookie" src="./assets/biscoito.svg" alt="">
+      <p>Abra o biscoito e descubra!</p>
+
+           <div id="fortuneCookie"></div>
+
     </div>
 
-  </div>
-</body>
+    <div class="screen2 hide">
+      <h1>Aqui está a sua sorte de hoje:</h1>
+      <h2>Essa é sua sorte</h2>
 
+      <div id="crackedCookie"></div>
+      <button id="tryAgain"> Abrir outro biscoito</button>
+    </div>
+  </main>
+  
+</body>
 </html>
